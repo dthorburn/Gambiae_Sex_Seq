@@ -1,0 +1,26 @@
+## Fastq_Screen configuration files for Imperial CrisantiLab ReadsQC pipeline
+## Author: DMJ Thorburn <d.thorburn@imperial.ac.uk
+
+## Aligners
+BOWTIE	bwt_edit
+BOWTIE2 bwt2_edit
+BWA bwa_edit
+
+## Threads
+THREADS		edit_me
+
+## DATABASES - These should be shared, but if not running on ICL's HPC as part of the Crisanti group, you will need to build these and assign appropraite paths. 
+DATABASE	Anopheles	/rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Anopheles/Anopheles
+DATABASE	Human	/rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Human/Homo_sapiens.GRCh38
+DATABASE	Mouse	/rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Mouse/Mus_musculus.GRCm38
+DATABASE	Rat	/rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Rat/Rnor_6.0
+DATABASE	Drosophila	/rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Drosophila/BDGP6
+DATABASE	Worm	/rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Worm/Caenorhabditis_elegans.WBcel235
+DATABASE	Yeast	/rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Yeast/Saccharomyces_cerevisiae.R64-1-1
+DATABASE	Ecoli	/rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/E_coli/Ecoli
+DATABASE	rRNA /rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/rRNA/GRCm38_rRNA
+DATABASE	MT	/rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Mitochondria/mitochondria
+DATABASE	Lambda /rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Lambda/Lambda
+DATABASE	Vectors /rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Vectors/Vectors
+DATABASE	Adapters	/rds/general/project/tmstorage/live/matteo_sexseq/RNA_Seq/00_FQS_DB/FastQ_Screen_Genomes/Adapters/Contaminants
+
