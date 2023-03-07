@@ -11,8 +11,14 @@ module load nextflow/22.04.4
 module unload -f java/jdk-12
 module load java/jdk-16
 
-echo "Starting:`date`"
+## Defining the help message. To use run 'sh ONT_Basecalling_QC.sh --help'
+case $1 in
+ -[h?] | --help)
+	nextflow run ONT_Basecalling_QC.nf -c ONT_Basecalling_QC.config --help
+	exit 0;;
+esac
 
+echo "Starting:`date`"
 nextflow run ONT_Basecalling_QC.nf \
 	-c ONT_Basecalling_QC.config \
 	--profile imperial \
