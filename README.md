@@ -32,7 +32,7 @@ Steps to run this pipeline:
 For a more detailed help message run `sh ONT_Basecalling_QC.sh --help`
 
 ### LR2. Consensus reference guided and *de novo* isoform transcriptome analysis 
-This pipeline was developed to map full transcipts and use reference guided *de novo* transcript assembly tools. The tools were tested using ONT cDNA libraries and are not appropriate for illumina data, but will work for PacBio isoseq and ONT dRNA approaches. This pipeline requires either filtered fastq files or bam files as input. If fastq files are provided, reads are mapped to a reference genome using either [uLTRA](https://github.com/ksahlin/ultra) or [MiniMap2](https://github.com/lh3/minimap2), with the former being considerably more computationally demanding. 
+This pipeline was developed to map full transcipts and use *de novo* transcript isoform assembly tools. The tools were tested using ONT cDNA libraries and are not appropriate for illumina data, but will work for PacBio isoseq and ONT dRNA approaches. This pipeline requires either filtered fastq files or bam files as input. If fastq files are provided, reads are mapped to a reference genome using either [uLTRA](https://github.com/ksahlin/ultra) or [MiniMap2](https://github.com/lh3/minimap2), with the former being considerably more computationally demanding. 
 
 A consensus based approach is applied by default where novel isoforms are called using [IsoQuant](https://github.com/ablab/IsoQuant) and [ESPRESSO](https://github.com/Xinglab/espresso). A consensus call is created among tools using [GFFcompare](https://github.com/gpertea/gffcompare), but all gtfs will be emitted in case of high discordance among calls.
 
