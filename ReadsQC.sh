@@ -8,9 +8,14 @@ Project_Dir=/path/to/project/directory
 cd $Project_Dir
 
 module load nextflow/20.10.0
+## Defining the help message. To use, run 'sh ReadsQC.sh --help`.
+case $1 in
+ -[h?] | --help)
+	nextflow run ReadsQC.nf -c ReadsQC.config --help
+	exit 0;;
+esac
 
 echo "Starting:`date`"
-
 ## To extract reads from Anopheles gambiae after QC completes, uncomment the last 2 arguments and run again. 
 nextflow run ReadsQC.nf \
 	-c ReadsQC.config \
