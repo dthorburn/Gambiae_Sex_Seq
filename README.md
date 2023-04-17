@@ -9,7 +9,7 @@ All QC reports will be compiled into a single [MultiQC](https://multiqc.info/) r
 Steps to run this pipeline:
 1. Install a recent version of [nextflow](https://github.com/nextflow-io/nextflow).
 2. Clone this repository using `git clone` into your working directory.
-3. Create the conda environment using 'conda -env create --name ReadsQC --file ./Conda_Environments/ReadsQC.yml' from the Conda_Environment subsidectory [anaconda environment built: 11/2022]
+3. Create the conda environment using `conda env create --name ReadsQC --file ./Conda_Environments/ReadsQC.yml` from the Conda_Environment subsidectory [anaconda environment built: 11/2022]
 4. Update the project directory path and add required (and optional) arguments in the `ReadsQC.sh` script, including the read type [`IlluminaSE`, `IlluminaPE`, or `Nanopore`].
 5. Run the pipeline using `qsub ReadsQC.sh`.
 
@@ -25,7 +25,7 @@ Steps to run this pipeline:
 2. Install a recent version of [nextflow](https://github.com/nextflow-io/nextflow).
 3. Download a copy of the appropriate reference genome (i.e., the *Anopheles gambiae* reference genome from [vectorbase](https://vectorbase.org/vectorbase/app/record/dataset/DS_2251b21396)). 
 4. Clone this repository using `git clone` into your working directory.
-5. Create the conda environment using 'conda -env create --name NanoQC --file ./Conda_Environments/NanoQC.yml' from the Conda_Environment subsidectory [anaconda environment built: 11/2022]
+5. Create the conda environment using `conda env create --name NanoQC --file ./Conda_Environments/NanoQC.yml` from the Conda_Environment subsidectory [anaconda environment built: 11/2022]
 6. Update the project directory path, ephemeral mount path, export the nextflow program path, and add required (and optional) arguments in the `ONT_Basecalling_QC.sh` script.
 7. Run the pipeline using `qsub ONT_Basecalling_QC.sh`.
 
@@ -39,7 +39,7 @@ A consensus based approach is applied by default where novel isoforms are called
 Steps to run this pipeline:
 1. Install a recent version of [nextflow](https://github.com/nextflow-io/nextflow).
 2. Clone this repository using `git clone` into your working directory.
-3. Create the conda environment using 'conda -env create --name NanoIsoExpress --file ./Conda_Environments/NanoIsoExpress.yml' from the Conda_Environment subsidectory [anaconda environment built: 02/2023]
+3. Create the conda environment using `conda -env create --name NanoIsoExpress --file ./Conda_Environments/NanoIsoExpress.yml` from the Conda_Environment subsidectory [anaconda environment built: 02/2023]
 4. Update the project directory path and add required (and optional) arguments in the `RNA_Isoform.sh` script.
 5. Run the pipeline using `qsub RNA_Isoform.sh`.
 
