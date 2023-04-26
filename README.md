@@ -39,7 +39,7 @@ A consensus based approach is applied by default where novel isoforms are called
 Steps to run this pipeline:
 1. Install a recent version of [nextflow](https://github.com/nextflow-io/nextflow).
 2. Clone this repository using `git clone` into your working directory.
-3. Create the conda environment using `conda -env create --name NanoIsoExpress --file ./Conda_Environments/NanoIsoExpress.yml` from the Conda_Environment subsidectory [anaconda environment built: 02/2023]
+3. Create the conda environment using `conda env create --name NanoIsoExpress --file ./Conda_Environments/NanoIsoExpress.yml` from the Conda_Environment subsidectory [anaconda environment built: 02/2023]
 4. Update the project directory path and add required (and optional) arguments in the `RNA_Isoform.sh` script.
 5. Run the pipeline using `qsub RNA_Isoform.sh`.
 
