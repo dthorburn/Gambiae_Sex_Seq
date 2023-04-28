@@ -44,7 +44,7 @@ Steps to run this pipeline:
 5. Update the project directory path and add required (and optional) arguments in the `RNA_Isoform.sh` script.
 6. Run the pipeline using `qsub RNA_Isoform.sh`.
 
-For a more detailed help message run `sh RNA_Isoform.sh --help`
+For a more detailed help message run `sh RNA_Isoform.sh --help`. Also, please note that if fastq files are used as input, decompressed fastqs are needed for uLTRA. 
 
 
  
